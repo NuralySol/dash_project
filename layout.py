@@ -1,6 +1,6 @@
 from dash import html
 import dash_bootstrap_components as dbc
-import bar_chart, pie_chart, scatter, age_bar_chart
+import bar_chart, pie_chart, scatter, h_bar_chart
 
 def create_layout(app, data):
     heading = html.H1(
@@ -47,7 +47,7 @@ def create_layout(app, data):
                     dbc.Col(
                         [
                             html.H4("H Bar Chart", className="text-center mt-3 mb-3"),
-                            age_bar_chart.render(app, data)
+                            h_bar_chart.render(app, data)
                         ],
                         lg=6,
                         className="p-3"

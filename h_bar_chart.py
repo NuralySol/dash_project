@@ -1,7 +1,7 @@
 import plotly.express as px
 from dash import html, dcc
 
-def render(app, data, x="order_price", y="item_name", title="Bar Chart", orientation="h", chart_id="bar_age_chart"):
+def render(app, data, x="order_price", y="item_name", title="Bar Chart", orientation="h", chart_id="h_age_chart"):
     fig = px.bar(
         data,
         x=x,
